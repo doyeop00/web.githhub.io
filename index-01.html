@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>DoYeop</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="warp">
+		<header id="header" class="clearfix">
+			<h1><a href="#"><img src="./images/logo.png" alt="D.Ylogo"></a></h1>
+			<nav class="nav">
+				<ul class="clearfix">
+					<li><a href="#">INFO</a>
+						<ul class="submenu">
+							<li><a href="#">introduce</a></li>
+							<li><a href="#">skill</a></li>
+						</ul>
+					</li>
+					<li><a href="#">DESIGN</a>
+						<ul class="submenu">
+							<li><a href="#">ui/ux</a></li>
+							<li><a href="#"> web</a></li>
+							<li><a href="#">video</a></li>
+							<li><a href="#">thumbnail</a></li>
+							<li><a href="#">photo</a></li>
+						</ul>
+					</li>
+					<li><a href="#">SNS</a>
+						<ul class="submenu">
+							<li><a href="#">facebook</a></li>
+							<li><a href="#">instagram</a></li>
+							<li><a href="#">discord</a></li>
+							<li><a href="#">kakaotalk</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header-->
+		<section id="banner">
+			<div class="slidelist">
+				<div class="slideimg">
+					<h2></h2>
+					<img src="./images/banner1.jpg" alt="이벤트1">
+				</div>
+				<div class="slideimg">
+					<h2></h2>
+					<img src="./images/banner3.jpg" alt="이벤트2">
+				</div>
+				<div class="slideimg">
+					<h2></h2>
+					<img src="./images/banner2.jpg" alt="이벤트3">
+				</div>
+			</div>
+		</section>
+		<!-- //banner-->
+
+		<section id="content1" class="clearfix">
+			<img src="./images/contents.jpg">
+		</section>
+
+		<!-- //content1-->
+
+		<section id="mockup">
+			<div class="mck1 clearfix">
+				<figure>
+					<img src="./images/01.jpg" alt="명함">
+					<hr>
+					<figcaption>명함</figcaption>					
+				</figure>
+				<figure>
+					<img src="./images/02.jpg" alt="앱디자인">
+					<hr>
+					<figcaption>앱디자인</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/06.jpg" alt="파우치">
+					<hr>
+					<figcaption>파우치</figcaption>
+				</figure>
+			</div>
+			<div class="mck2 clearfix">
+				<figure>
+					<img src="./images/04.jpg" alt="포트폴리오-책">
+					<hr>
+					<figcaption>포트폴리오 책</figcaption>
+					
+				</figure>
+				<figure>
+					<img src="./images/05.jpg" alt="앨범커버">
+					<hr>
+					<figcaption>앨범</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/03.jpg" alt="썸네일">
+					<hr>
+					<figcaption>썸네일</figcaption>
+				</figure>
+			</div>
+
+		</section>
+		<!-- //mockup-->
+
+		<footer id="footer" class="clearfix">
+			<h2><img src="images/logo.png" alt="D.Ylogo"></h2>
+			<div class="foot">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">사업자 정보확인</a></li>
+				</ul>
+				<address>
+					한강미디어고(주) 대표자:여도엽<br>
+					주소: 서울시 영등포구 선유로55길 22 사업자등록번호:010-3595-0035
+				</address>
+			</div>
+
+		</footer>
+		<!-- //footer-->
+
+	</div>
+	<!-- //warp-->
+	
+	<!--srcipt-->
+	<script src="./script/jquery.min.js"></script>
+	<script src="./script/custom.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		//네비게이션
+		$(".nav > ul > li").mouseover(function(){
+			$(this).find(".submenu").stop().slideDown(200);
+		});
+		$(".nav > ul > li").mouseout(function(){
+			$(this).find(".submenu").stop().slideUp(200);
+		});
+		
+		//이미지 슬라이드(좌우)
+		var currentIndex = 0;
+		
+		setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-1000)+"px";
+            $(".slidelist").animate({ left:slidePosition}, 400);
+        },3000);
+		
+	</script>
+	
+	
+</body>
+
+</html>

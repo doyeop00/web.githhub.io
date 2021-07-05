@@ -1,0 +1,224 @@
+/*reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*warp*/
+#warp {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/*header*/
+#header {
+	padding-top: 15px;
+	padding-bottom: 0px;
+}
+
+#header h1 {
+	float: left;
+}
+
+#header h1 img {
+	width: 200px;
+	margin-top: 0;
+    height: 65px;
+}
+
+#header .nav {
+	float: right;
+	background: #fff;
+	transition: all 0.5s;
+}
+
+#header .nav li {
+	position: relative;
+	float: left;
+	width: 140px;
+	text-align: center;
+}
+
+#header .nav li a {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px 20px 20px 20px;
+	transition: all 0.5s;
+}
+
+#header .nav li a:hover {
+	background: #ccc;
+}
+
+#header .nav li ul.submenu {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 67px;
+	z-index: 100;
+}
+
+#header .nav li ul.submenu li a {
+	padding: 10px;
+	background: #000;
+	color: #fff;
+}
+
+#header .nav li ul.submenu li a:hover {
+	background: #666;
+}
+
+/*banner*/
+#banner {
+	height: 389px;
+	overflow: hidden;
+}
+
+#banner img {
+	width: 100%;
+	display: block;
+}
+
+/* 상하
+.slideList {position: relative width: 1000px; height: 389px;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {postition: absolute: left: 50%; top: 50%;}
+transform: translate(-50%,-50%); background: rgba(0,0,0,0.4); padding
+
+*/
+
+/*좌우*/
+.slidelist {
+	position: relative;
+	width: 3000px;
+	z-index: 50;
+}
+
+.slidelist .slideimg {
+	position: relative;
+	width: 1000px;
+	float: left;
+}
+
+#content1 {
+	margin-top: 20px;
+}
+
+/*mockup*/
+#mockup {
+	margin-top: 19px;
+}
+
+.mck1 figure {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 3rem;
+}
+
+.mck1 figure img {
+	width: 100%;
+    margin-bottom: 15px;
+}
+
+.mck1 figure hr {
+    margin: 0px auto;
+	width: 200px;
+}
+
+.mck1 figure figcaption {
+	margin-top: 10px;
+	text-align: center;	
+}
+
+.mck1 figure:last-child {
+	margin-right: 0;
+}
+
+.mck2 figure {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+
+}
+
+.mck2 figure img {
+	width: 100%;
+    margin-bottom: 15px;
+}
+
+.mck2 figure hr {
+    margin: 0px auto;
+	width: 200px;
+}
+
+.mck2 figure figcaption {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.mck2 figure:last-child {
+	margin-right: 0;
+}
+
+
+/*footer*/
+#footer {
+	padding: 20px 0;
+	background: #fff;
+	margin-top: 30px;
+}
+
+#footer h2 {
+	float: left;
+	padding-left: 20px;
+}
+
+#footer h2 img {
+	width: 150px;
+}
+
+#footer .foot {
+	float: left;
+	padding-right: 30px;
+}
+
+#footer .foot ul {
+	padding-bottom: 10px;
+    padding-left: 3rem;
+}
+
+#footer .foot ul li {
+	display: inline;
+}
+
+#footer .foot ul li a {
+    
+	color: #000;
+	padding-right: 10px;
+}
+
+#footer .foot address {
+    padding-left: 3rem;
+	font-style: normal;
+	color: #777;
+}
